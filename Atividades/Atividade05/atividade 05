@@ -1,0 +1,81 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Exercício 2 número 1
+
+int main() {
+    int a[10];
+    int i;
+    int maior = -32768;
+    int menor = 32767;
+    
+    for(i = 0; i <= 9; i++){
+        scanf("%d", &a[i]);
+        if(a[i] < menor){
+            menor = a[i];
+        }
+        else if(a[i] > maior){
+            maior = a[i];
+        }
+    }
+    printf("Maior numero: %d \n", maior);
+    printf("Menor numero: %d \n", menor);
+    return 0;
+}
+
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+// Exercício 2 número 2
+
+int main()
+{
+    int a[7][2];
+    int b;
+    int i;
+    a[0][0] = 1111;
+    a[1][0] = 2222;
+    a[2][0] = 3333;
+    a[3][0] = 4444;
+    a[4][0] = 5555;
+    a[5][0] = 6666;
+    a[6][0] = 7777;
+    a[0][1] = 30001000;
+    a[1][1] = 30002000;
+    a[2][1] = 30003000;
+    a[3][1] = 30004000;
+    a[4][1] = 30005000;
+    a[5][1] = 30006000;
+    a[6][1] = 30007000;
+    
+
+    scanf ("%d", &b);
+    for(i = 0; i<=6; i++){
+        if ((a[i][0]) == b){
+            printf("Telefone: %d", a[i][1]);
+        }
+    }
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+
+// Exercício 2 número 3
+
+int main(){
+    char a[80]; 
+    int i, tamanho; 
+    gets(a); 
+    tamanho = strlen(a); 
+    printf("String invertida:  "); 
+    for(i=tamanho-1; i>=0; i--){
+    	printf("%c" ,a[i]);
+    }
+    getch(); 
+    return 0;
+}
