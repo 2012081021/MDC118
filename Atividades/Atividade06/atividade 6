@@ -1,0 +1,95 @@
+#include <stdio.h>
+#include <stdlib.h>
+// Exercício 3 número 1
+
+int main() 
+{
+    int dia=0;
+    int mes=0;
+    int ano=0;
+    scanf ("%d", &dia);
+    scanf ("%d", &mes);
+    scanf ("%d", &ano);
+    printf ("BR: %d/%d/%d \n", dia, mes, ano);
+    printf("US: %d/%d/%d \n", mes, dia, ano);
+    
+}
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+// Exercício 3 número 2
+
+int main() {
+    char nome[10][30];
+    long int tel[10];
+    int i;
+    for(i = 0; i<=9; i++){
+        printf("Nome %d: ", i+1);
+        scanf("%s", &nome[i]);
+    }
+    for(i = 0; i<=9; i++){
+        printf("Telefone %d: ", i+1);
+        scanf("%ld", &tel[i]);
+
+    }    
+    for(i = 0; i<=9; i++){
+        printf("%s - %ld\n", nome[i], tel[i]);
+    }
+    return 0;
+}
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+// Exercício 3 número 3
+
+int main() {
+    int a;
+    
+    scanf("%d", &a);
+
+    switch (a){
+        case 1:
+            printf("Janeiro");   
+            break;
+        case 2:
+            printf("Fevereiro");    
+            break;      
+        case 3:
+            printf("Março");    
+            break;      
+        case 4:
+            printf("Abril");    
+            break;      
+        case 5:
+            printf("Maio");      
+            break;   
+        case 6:
+            printf("Junho");   
+            break;       
+        case 7:
+            printf("Julho");  
+            break;
+        case 8:
+            printf("Agosto");  
+            break;
+        case 9:
+            printf("Setembro");      
+            break;   
+        case 10:
+            printf("Outubro");       
+            break;   
+        case 11:
+            printf("Novembro");  
+            break;
+        case 12:
+            printf("Dezembro");  
+            break;
+    }
+    return 0;
+}
